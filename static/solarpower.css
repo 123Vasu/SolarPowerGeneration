@@ -1,0 +1,274 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #45a049;
+  font-style: italic;
+  font-weight: 100%;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #4CAF50;
+}
+
+form {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 30px;
+  border-radius: 4px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #45a049;
+}
+
+p {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 18px;
+  color: brown;
+}
+
+.form-group input {
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Animation when input fields receive focus */
+.form-group input:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px #4CAF50;
+}
+
+/* Apply animation to h3 element */
+.title h3 {
+  animation: slide 5s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Apply animation to input fields */
+.form-group input {
+  animation: slide 0.8s ease-in-out forwards;
+}
+
+/* Apply animation to the h4 element */
+.mbr-section-subtitle {
+  animation: slide 0.8s ease-in-out forwards;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply animation to the button */
+.mbr-section-btn button {
+  animation: pulse 2s infinite;
+}
+
+/* Container to restrict button position */
+.button-container {
+  position: relative;
+  overflow: hidden;
+  width: fit-content; /* Adjust this as needed */
+  margin: 0 auto; /* Center the container */
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animated-footer {
+  animation-name: slideIn;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+.animated-footer {
+  animation: slideIn 1s ease infinite, fadeIn 1s ease infinite;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animated-footer {
+  animation-name: slideIn;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 99999;
+}
+
+.animated-footer {
+  animation: slideIn 1s ease 99999, fadeIn 1s ease 99999;
+}
+
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Animation when select field receives focus */
+.form-group select:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px #4CAF50;
+}
+
+/* .wind-select::placeholder {
+  color: #999999;
+  opacity: 1; 
+} */
+.wind-select::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.wind-select::-moz-placeholder {
+  color: #999999;
+  opacity: 1;
+}
+
+.wind-select:-ms-input-placeholder {
+  color: #999999;
+}
+
+.wind-select::placeholder {
+  color: #999999;
+  opacity: 1;
+}
+
+.wind-select::placeholder,
+.wind-select option[disabled] {
+  color: #999999;
+}
+
+
+
+

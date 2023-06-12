@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Power Prediction</title>
+    <link rel="stylesheet" href={{url_for('static',filename='style1.css')}}>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <section>
+      <input type="checkbox" id="check">
+      <header>
+        <div class="top">
+        <h2><a href="#" class="logo">Solar Power Generation</a></h2>
+        <div class="navigation">
+          <a href="#">Home</a>
+          <a href="#about">About Solar Power Generation</a>
+          <a href="#team">Developer</a>
+          <a href="/predict">Predictor</a>
+          
+        </div>
+        
+        <label for="check">
+        <i class="fas fa-bars menu-btn"></i>
+        <i class="fas fa-times close-btn"></i>
+        </label>
+      </div>
+      </header>
+      <div class="content" style="margin-top: 8%;">
+        <div class="info">
+          <h2>Solar Power Generation <br><span>Save Energy</span></h2>
+          <p> "Every 24 hours, enough sunlight touches the Earth to provide energy for the entire planet for 24 years."</p>
+          <a href="#about" class="info-btn">More info</a>
+        </div>
+      </div>
+    
+    </section>
+
+    <section id="about">
+      <h2>About Solar Power Prediction</h2>
+      <p class="about-content" style="text-align: center;">The Solar Power Generation Project is a machine learning-based project aimed at predicting the solar power generation for a given location based on historical weather data. The project uses data from the Kaggle to train a Random Forest Regression model, which is then used to make predictions.
+      </p>
+        <p class="about-content" style="text-align: center;">The main objective of the Solar Power Generation Project is to provide accurate predictions of solar power generation for a given location, which can be useful for various stakeholders in the renewable energy sector. The project can help solar power plant operators optimize their energy production, and can also help energy analysts and policymakers make informed decisions about the future of renewable energy.</p>
+      <p class="about-content" style="text-align: center;"> In the future, we plan to expand the scope of the Solar Power Generation Project by including data from other sources, such as satellite imagery and social media sentiment analysis. We also plan to develop a web application that allows users to input their location and receive real-time predictions of solar power generation.
+      </p>
+    </section>
+
+    <!-- 1st Member -->
+<div class="container" id="team">
+  
+    <h2>Developer</h2>
+    <div id="team-content">
+<div class="col-md-3 col-sm-6">
+
+                <div class="our-team">
+
+                    <div class="pic">
+
+                        <img src="../static/image1.jpeg">
+
+                    </div>
+
+                    <h3 class="title">Vasu Arora</h3>
+
+                    <span class="post">Software Developer</span>
+
+
+                   <ul class="social">
+
+               <li><a href="https://github.com/123Vasu" class="fa fa-github"></a></li>
+
+               <li><a href="https://www.linkedin.com/in/aroravasu123/" class="fa fa-linkedin"></a></li>
+
+        </ul>
+
+
+                </div>
+
+            </div>
+
+</div>
+
+  </body>
+</html>
